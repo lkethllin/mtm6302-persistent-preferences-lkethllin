@@ -1,0 +1,61 @@
+body {
+    font-family: Poppins, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'menu main main'
+    'menu main main';
+    grid-gap: 10px;
+}
+
+
+.container {
+    margin-top: 20px;
+    grid-area: main;
+}
+
+.header {
+    grid-area: header;
+}
+
+.preferences-panel {
+    margin-bottom: 20px;
+    grid-area: menu;
+    padding: 10%;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+.none {
+    list-style-type: none;
+}
+
+/* Light Theme */
+body.light {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Blue Theme */
+body.blue {
+    background-color: #cce7ff;
+    color: #003366;
+}
+
